@@ -1,0 +1,17 @@
+MINI CLOUD IMAGE STUDIO - TEST REPORT
+Generated: 2026-08-20 15:03:09
+Total : 13 | PASS: 11 | FAIL: 2
+
+[PASS] Import Modules & Settings OK
+[FAIL] Utility Helpers Functions Bad ID: IMG-26393EDC
+[FAIL] Pillow Image Operations (Resize/Grayscale/Sepia/Invert/Watermark/Convert) 
+[PASS] S3 Connection to LocalStack (http://localhost:4566) 
+[PASS] DynamoDB Connection to LocalStack (http://localhost:4566) 
+[PASS] S3 Ensure Bucket (create if missing) 
+[PASS] DynamoDB Ensure Table (create if missing, wait ACTIVE) 
+[PASS] S3 Upload Object + Get Object + List Objects 
+[PASS] DynamoDB Put Item + Get Item + Scan All 
+[PASS] Full Workflow: Upload + 6 Process Ops (Resize/GS/Sepia/Invert/WM/Convert) + Save S3 + DDB OriginalID=IMG-E7D2E28A, TotalObjects=8, TotalStorage=179815 bytes
+[PASS] initialize_services() from app.py (check+create bucket+table) 
+[PASS] Dashboard Statistics (counts, storage, unique products) all=8, original=2, processed=6, products=2, storage=179815
+[PASS] Delete from S3 + Delete from DynamoDB (rollback + cleanup test data) Delete target cleaned up: IMG-3F901167

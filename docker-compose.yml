@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  localstack:
+    image: localstack/localstack:latest
+    container_name: localstack-umkm
+    ports:
+      - "4566:4566"
+      - "4510-4559:4510-4559"
+    environment:
+      - SERVICES=s3,dynamodb
+      - DEBUG=1
+      - PERSISTENCE=1
+      - DATA_DIR=/tmp/localstack/data
+      - AWS_DEFAULT_REGION=us-east-1
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+    volumes:
+      - "./.localstack:/tmp/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"

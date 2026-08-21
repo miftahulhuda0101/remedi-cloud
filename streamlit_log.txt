@@ -1,0 +1,14 @@
+Streamlit Start Log
+Python: C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe
+CWD: C:\Users\Asus\Documents\trae_projects\umkm
+[OK] streamlit imported: 1.62.0
+[OK] config.settings imported. Bucket: mini-cloud-umkm-products
+[OK] S3Service imported
+[OK] DynamoDBService imported
+[OK] ImageService imported
+
+=== Menjalankan streamlit ===
+CMD: C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe -m streamlit run app.py --server.port 8501 --server.address 0.0.0.0 --browser.gatherUsageStats false --server.runOnSave false --server.headless true
+Process PID: 7424
+URL: http://localhost:8501
+2026-08-20 11:14:47.767 Port 8501 is not available
